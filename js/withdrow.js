@@ -1,5 +1,10 @@
 document.getElementById('withdrow-btn').addEventListener('click', function() {
     const withdrowBtn = getInputFieldID('withdrow-field');
+
+    if(isNaN(withdrowBtn)){
+        alert('Please Entair a number');
+        return;
+    }
     
     // Total Withdrow Ammount 
     const withdrowAmmount = getTextElementID('withdrow-ammount');
